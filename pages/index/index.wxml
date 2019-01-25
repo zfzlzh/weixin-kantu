@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+<!--头  -->
+  <view class="header">
+    <i-input value="{{ content }}" type="text" mode="wrapped" placeholder="请输入要搜索的内容"/>
+    </view>
+    <!--身  -->
+  <view class="section">
+  <!--轮播与九宫格  -->
+    <i-card full='true'>
+      <view slot="content" class="swipe">
+        <swiper class="carousel" autoplay interval='4000' circular='true' indicator-dots='true'>
+          <swiper-item wx:for="{{list}}" wx:key="index">
+            <image src="{{item.pic}}" lazy-load mode="aspectFill"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view slot="footer">
+        <view class="weui-grids">
+            <block wx:for="{{grid}}" wx:key="index">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{item.img}}" />
+                    <view class="weui-grid__label">{{item.title}}</view>
+                </navigator>
+            </block>
+        </view>
+      </view>
+    </i-card>
+    <!--推荐  -->
+    <i-divider  color="#2d8cf0" lineColor="#2d8cf0" size="20" i-class="divider">推荐</i-divider>
+    <i-card full='true' wx:for="{{reco}}" wx:key="index">
+      <view slot="content">
+        <view class="weui-flex">
+            <view class="weui-flex__item info">
+              <image src="{{item.avatar}}" class="avatar"></image>
+              <text>{{item.auther}}</text>
+            </view>
+            <view class='follow'>
+            <button class="weui-btn mini-btn" type="primary" size="mini">关注</button>
+            </view>
+        </view>
+      </view>
+      <view slot="footer" class="pic">
+        <image src="{{item.pic}}"/>
+      </view>
+    </i-card>
+  </view>
+</view>

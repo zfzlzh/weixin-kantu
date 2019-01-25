@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#666",
+    "navigationBarTitleText": "看图",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息中心",
+        "iconPath": "pages/img/message.png",
+        "selectedIconPath": "pages/img/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "用户中心",
+        "iconPath": "pages/img/profile.png",
+        "selectedIconPath": "pages/img/profile-active.png"
+      }
+    ]
+  }
+}
