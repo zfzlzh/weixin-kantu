@@ -1,18 +1,26 @@
-// pages/message/message.js
+// pages/find/find.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+  find:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.request({
+      url: 'http://127.0.0.1:3000/index',
+      success: (res) => {
+        let { recommend } = res.data
+        this.setData({
+          find:recommend
+        })
+      }
+    })
   },
 
   /**

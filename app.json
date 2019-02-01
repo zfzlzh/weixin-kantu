@@ -2,8 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/message/message",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/find/find",
+    "pages/addPhoto/addPhoto"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,12 +19,6 @@
         "text": "首页",
         "iconPath": "pages/img/home.png",
         "selectedIconPath": "pages/img/home-active.png"
-      },
-      {
-        "pagePath": "pages/message/message",
-        "text": "消息中心",
-        "iconPath": "pages/img/message.png",
-        "selectedIconPath": "pages/img/message-active.png"
       },
       {
         "pagePath": "pages/profile/profile",

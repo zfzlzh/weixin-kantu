@@ -19,11 +19,14 @@
 .userinfo-nickname {
   color: #aaa;
 }
-.list{
+.myInfo-list{
+  margin-bottom:-2.6rem;
+}
+.list,.myInfo-list{
   width:100%;
   margin-top:3rem
 }
-.list>.list_info{
+.list>.list_info,.myInfo-list>.list_info{
   margin:0.4rem 0
 }
 .footer{

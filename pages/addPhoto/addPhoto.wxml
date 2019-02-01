@@ -1,0 +1,32 @@
+<!--pages/addPhoto/addPhoto.wxml-->
+<view>
+  <i-divider  color="#2d8cf0" lineColor="#2d8cf0" size="18" i-class="divider">图片上传</i-divider>
+  <block wx:for="{{files}}" wx:key="*this">
+    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+      <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+    </view>
+  </block>
+  <view class="weui-uploader__input-box add">
+    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+  </view>
+  <i-divider  color="#2d8cf0" lineColor="#2d8cf0" size="18" i-class="divider">信息填写</i-divider>
+  <view class="weui-cells weui-cells_after-title p-info">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">标题</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">描述</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder='描述在10-20字以内'/>
+                </view>
+            </view>
+        </view>
+        <i-button bind:click="handleClick" type="info" long="true">提交                   </i-button>
+</view>

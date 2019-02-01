@@ -1,0 +1,7 @@
+/* pages/addPhoto/addPhoto.wxss */
+.add{
+  margin-left:1rem
+}
+.p-info{
+  margin:2rem 0;
+}

@@ -9,7 +9,7 @@ Page({
     content:"",
     list:[],
     reco:[],
-    grid: [{ pid: 1, img: "../img/grid/faxian.png", title: "发现" },
+    grid: [{ pid: 1, img: "../img/grid/faxian.png", title: "发现", url:'../find/find' },
       { pid: 2, img: "../img/grid/tuijian.png", title: "推荐" },
       { pid: 3, img: "../img/grid/renqi.png", title: "今日人气" },
       { pid: 4, img: "../img/grid/zuixin.png", title: "最新" },

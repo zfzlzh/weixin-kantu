@@ -11,10 +11,12 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     list:[
       { title:"收藏",url:""},
-      { title:"上传图片",url:""},
+      { title: "我的关注", url: "" },
       { title: "我的图片", url: "" },
+      { title: "上传图片", url: "../addPhoto/addPhoto" },
       { title: "关于我们", url: "" },
       { title: "版权相关", url: "" }
+      
     ]
   },
   //事件处理函数

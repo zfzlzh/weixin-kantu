@@ -1,0 +1,25 @@
+/* pages/find/find.wxss */
+.container .divider{
+  width:18rem
+}
+.divider>view{
+  background: #ddd
+}
+.info{
+  display:flex;
+}
+.info>text{
+  margin-left:1rem;
+  font-size:40rpx
+}
+.avatar{
+  width:2rem;
+  height:2rem;
+  border-radius:50%
+}
+.pic image{
+  margin-left:0.7rem
+}
+.follow{
+  padding:0.2rem
+}

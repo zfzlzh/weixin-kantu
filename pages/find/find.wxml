@@ -1,0 +1,22 @@
+<!--pages/find/find.wxml-->
+<view class= "container">
+<i-divider  color="#2d8cf0" lineColor="#2d8cf0" size="20" i-class="divider">每日新发现</i-divider>
+    <view class="photo">
+      <i-card full='true' wx:for="{{find}}" wx:key="index">
+      <view slot="content">
+        <view class="weui-flex">
+            <view class="weui-flex__item info">
+              <image src="{{item.avatar}}" class="avatar"></image>
+              <text>{{item.auther}}</text>
+            </view>
+            <view class='follow'>
+            <button class="weui-btn mini-btn" type="primary" size="mini">关注</button>
+            </view>
+        </view>
+      </view>
+      <view slot="footer" class="pic">
+        <image src="{{item.pic}}"/>
+      </view>
+    </i-card>
+    </view>
+</view>
